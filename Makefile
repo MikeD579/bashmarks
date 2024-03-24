@@ -18,4 +18,10 @@ install:
 	@echo 'd <bookmark_name> - Deletes the bookmark'
 	@echo 'l                 - Lists all available bookmarks'
 
+uninstall:
+	@echo ""
+	rm $(INSTALL_DIR)/bashmarks.sh
+	@echo ""
+	@echo 'Successfully uninstalled bashmarks.sh'
+
 .PHONY: all install
